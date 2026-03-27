@@ -1,0 +1,15 @@
+# Rust build artifacts
+/target
+
+# Votrexian Database Snapshots (Biar data pribadi aman)
+*.vodb
+*.vdb
+
+# Test data & logs
+test_files/
+hasil_ibadah.json
+payload_*.json
+*.log
+
+# Environment variables
+.env
