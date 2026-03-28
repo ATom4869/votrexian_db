@@ -8,20 +8,20 @@ use std::io::{Read, Write};
 
 const MAX_CONTENT_SIZE: usize = 512 * 1024 * 1024;
 
-pub struct BlobberDB {
+pub struct DBMonitoring {
     pub storage: HashMap<BigUint, DataMetadata>,
     pub current_usage: u64, // Dalam Bytes
     pub max_capacity: u64,  // Dalam Bytes
 }
 
-impl BlobberDB {
+impl DBMonitoring {
     /// Inisialisasi Database baru di RAM
     pub fn new() -> Self {
         // Limit 60% dari RAM
         let limit_gb = 3.6;
         let max_bytes = (limit_gb * 1024.0 * 1024.0 * 1024.0) as u64;
 
-        BlobberDB {
+        DBMonitoring {
             storage: HashMap::new(),
             current_usage: 0,
             max_capacity: max_bytes,

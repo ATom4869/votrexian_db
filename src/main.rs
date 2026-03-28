@@ -1,7 +1,7 @@
 mod database;
 mod models;
 
-use database::BlobberDB;
+use database::DBMonitoring;
 use num_bigint::BigUint;
 use std::fs;
 use std::io::{self, Write};
@@ -19,7 +19,7 @@ fn format_vodb_name(input: &str) -> String {
 }
 
 fn main() {
-    let mut db = BlobberDB::new();
+    let mut db = DBMonitoring::new();
     let mut current_db_path = "votrexian.vodb".to_string();
 
     println!("--- 🟢 Votrexian DBMS Engine Active ---");
