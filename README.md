@@ -3,7 +3,13 @@
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 ![Language: Rust](https://img.shields.io/badge/Language-Rust-orange.svg)
 
-An ultra-fast, in-memory Key-Value DBMS written in **Rust**. Built for high-performance data storage in the **Votrexian** ecosystem, featuring native LZ4 compression and binary snapshotting (.vodb).
+An ultra-fast, in-memory Key-Value DBMS written in **Rust**. Built for high-performance data storage in the **Votrexian** ecosystem, featuring native LZ4 compression and binary snapshot (.vodb).
+
+## 🧠 Background: Why VODB?
+
+"If you can only need processor and and Memory for database, why would you need Physical Storage? 🗿🗿"
+
+— _The VODB Manifesto_
 
 ## 🔥 Core Capabilities
 
