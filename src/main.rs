@@ -44,7 +44,7 @@ fn main() {
         println!(" [2] List All Data (Sorted)");
         println!(" [3] View Data Content");
         println!(" [4] Search by Name");
-        println!(" [5] Search by Type"); // <-- Sekarang nomor 5 sesuai request!
+        println!(" [5] Search by Type");
         println!(" [6] Delete Data (ID)");
         println!(" [7] Save Snapshot");
         println!(" [8] Load Another Snapshot");
@@ -125,10 +125,10 @@ fn main() {
             "9" => {
                 println!("💾 Auto-Saving to {}...", current_db_path);
                 db.save_snapshot(&current_db_path);
-                println!("👋 Sayonara, Mas Arson! Engine Shutdown. 🚀");
+                println!("👋 Sayonara, Engine Shutdown. 🚀");
                 break;
             }
-            _ => println!("❓ Pilihan tidak ada, Mas Arson."),
+            _ => println!("❓ Pilihan tidak ada."),
         }
     }
 }

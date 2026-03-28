@@ -6,7 +6,6 @@ use std::collections::HashMap;
 use std::fs::File;
 use std::io::{Read, Write};
 
-// Batas suci per-file: 512 MB
 const MAX_CONTENT_SIZE: usize = 512 * 1024 * 1024;
 
 pub struct BlobberDB {
@@ -18,7 +17,7 @@ pub struct BlobberDB {
 impl BlobberDB {
     /// Inisialisasi Database baru di RAM
     pub fn new() -> Self {
-        // Limit 60% dari 6GB RAM Acer Aspire Mas Arson = ~3.6GB
+        // Limit 60% dari RAM
         let limit_gb = 3.6;
         let max_bytes = (limit_gb * 1024.0 * 1024.0 * 1024.0) as u64;
 
