@@ -1,20 +1,20 @@
 use num_bigint::BigUint;
 use serde::{Deserialize, Serialize};
 
-/// 1. DataMetadata: Struktur yang HIDUP di RAM & DISK (.vodb)
-#[derive(Serialize, Deserialize, Debug, Clone)]
-pub struct DataMetadata {
-    pub data_id: BigUint,
+#[derive(Serialize, Deserialize, Debug)]
+pub struct RawInput {
+    pub data_id: String,
     pub data_name: String,
+    pub data_type: String, // Label tipe data (TEXT, PDF, dll)
     pub data_is_encrypted: bool,
-    pub data_content: Vec<u8>, // Simpan byte terkompresi di sini
+    pub data_content: String, // Masih dalam bentuk Base64 String
 }
 
-/// 2. RawInput: Struktur khusus untuk jembatan INPUT JSON
-#[derive(Deserialize, Debug)]
-pub struct RawInput {
-    pub data_id: String, // Kita terima sebagai String dulu dari JSON
+#[derive(Serialize, Deserialize, Debug, Clone)]
+pub struct DataMetadata {
+    pub data_id: BigUint, // BigInt biar kuat nampung ID blockchain-mu
     pub data_name: String,
+    pub data_type: String,
     pub data_is_encrypted: bool,
-    pub data_content: String,
+    pub data_content: Vec<u8>, // Sudah jadi Vector Byte & Terkompresi LZ4
 }

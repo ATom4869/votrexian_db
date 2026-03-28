@@ -3,6 +3,7 @@ mod models;
 
 use database::BlobberDB;
 use num_bigint::BigUint;
+use std::fs;
 use std::io::{self, Write};
 
 fn format_vodb_name(input: &str) -> String {
@@ -10,7 +11,6 @@ fn format_vodb_name(input: &str) -> String {
     if trimmed.is_empty() {
         return "votrexian.vodb".to_string();
     }
-
     if trimmed.ends_with(".vodb") {
         trimmed.to_string()
     } else {
@@ -20,21 +20,36 @@ fn format_vodb_name(input: &str) -> String {
 
 fn main() {
     let mut db = BlobberDB::new();
-
-    // State: Menyimpan path DB yang sedang aktif
     let mut current_db_path = "votrexian.vodb".to_string();
 
     println!("--- 🟢 Votrexian DBMS Engine Active ---");
+    println!("Dashboard rapih, hati tenang ya Mas Arson. ✨");
 
-    // Auto-Load saat pertama kali startup (Firing On)
     db.load_snapshot(&current_db_path);
 
     loop {
-        // Tampilkan info DB mana yang sedang dikerjakan
-        println!("\n📂 Active Database: [{}]", current_db_path);
-        print!(
-            " [1] Bulk Import\n [2] List All\n [3] View Content\n [4] Search Name\n [5] Save As\n [6] Load\n [7] Exit\n> "
+        let (used, limit, pct) = db.get_stats();
+        println!("\n📂 Active DB: [{}]", current_db_path);
+        println!(
+            "📊 RAM Usage: {:.2} MB / {:.2} MB ({:.1}%)",
+            used, limit, pct
         );
+
+        if pct > 90.0 {
+            println!("⚠️ WARNING: Memory almost full!");
+        }
+
+        println!("--------------------------------------------------");
+        println!(" [1] Bulk Import (JSON)");
+        println!(" [2] List All Data (Sorted)");
+        println!(" [3] View Data Content");
+        println!(" [4] Search by Name");
+        println!(" [5] Search by Type"); // <-- Sekarang nomor 5 sesuai request!
+        println!(" [6] Delete Data (ID)");
+        println!(" [7] Save Snapshot");
+        println!(" [8] Load Another Snapshot");
+        println!(" [9] Exit & Auto-Save");
+        print!("--------------------------------------------------\n> ");
         io::stdout().flush().unwrap();
 
         let mut choice = String::new();
@@ -42,96 +57,78 @@ fn main() {
 
         match choice.trim() {
             "1" => {
-                print!("📄 Masukkan Path File JSON (ex: ./data.json): ");
+                print!("📂 Path file JSON: ");
                 io::stdout().flush().unwrap();
-                let mut path_input = String::new();
-                io::stdin().read_line(&mut path_input).unwrap();
-                let path = path_input.trim();
-
-                // Baca file dan parse
-                match std::fs::read_to_string(path) {
-                    Ok(json_content) => {
-                        match serde_json::from_str::<Vec<models::RawInput>>(&json_content) {
-                            Ok(raw_list) => {
-                                println!("🚀 Mengimpor {} data...", raw_list.len());
-                                db.insert_bulk(raw_list);
-                            }
-                            Err(e) => eprintln!("❌ Error parsing JSON: {}", e),
-                        }
-                    }
-                    Err(e) => eprintln!("❌ Gagal baca file di {}: {}", path, e),
-                }
-            }
-
-            "2" => {
-                db.list_metadata();
-            }
-
-            "3" => {
-                print!("🔍 Masukkan ID Data (Angka): ");
-                io::stdout().flush().unwrap();
-                let mut id_input = String::new();
-                io::stdin().read_line(&mut id_input).unwrap();
-
-                if let Some(id) = BigUint::parse_bytes(id_input.trim().as_bytes(), 10) {
-                    if let Some((meta, content)) = db.get_data(&id) {
-                        println!("\n--- 📄 DATA FOUND ---");
-                        println!("ID       : {}", meta.data_id);
-                        println!("Name     : {}", meta.data_name);
-                        println!("Enc      : {}", meta.data_is_encrypted);
-                        println!("Size     : {} bytes (Compressed)", meta.data_content.len());
-                        println!("Content  :\n{}", content);
-                        println!("---------------------");
-                    } else {
-                        println!("❌ ID {} tidak ditemukan di RAM.", id);
-                    }
+                let mut path = String::new();
+                io::stdin().read_line(&mut path).unwrap();
+                if let Ok(content) = fs::read_to_string(path.trim()) {
+                    let raw_data: Vec<models::RawInput> =
+                        serde_json::from_str(&content).expect("Format JSON salah!");
+                    db.insert_bulk(raw_data);
                 } else {
-                    println!("❌ Format ID salah! Harus angka.");
+                    println!("❌ File tidak ditemukan!");
                 }
             }
-
-            "4" => {
-                print!("🔍 Ketik Nama File/Kata Kunci: ");
+            "2" => db.list_metadata(),
+            "3" => {
+                print!("🔍 Masukkan ID: ");
                 io::stdout().flush().unwrap();
-                let mut query = String::new();
-                io::stdin().read_line(&mut query).unwrap();
-
-                db.search_by_name(query.trim());
+                let mut id_i = String::new();
+                io::stdin().read_line(&mut id_i).unwrap();
+                if let Some(id) = BigUint::parse_bytes(id_i.trim().as_bytes(), 10) {
+                    db.view_content(&id);
+                } else {
+                    println!("❌ ID salah!");
+                }
             }
-
-            "5" => {
-                print!("💾 Simpan Sebagai (Nama file saja): ");
+            "4" => {
+                print!("🔍 Nama File: ");
                 io::stdout().flush().unwrap();
-                let mut file_name = String::new();
-                io::stdin().read_line(&mut file_name).unwrap();
-
-                // Update state path dan simpan
-                current_db_path = format_vodb_name(&file_name);
+                let mut q = String::new();
+                io::stdin().read_line(&mut q).unwrap();
+                db.search_by_name(q.trim());
+            }
+            "5" => {
+                print!("📂 Tipe (TEXT/PDF/dll): ");
+                io::stdout().flush().unwrap();
+                let mut t = String::new();
+                io::stdin().read_line(&mut t).unwrap();
+                db.search_by_type(t.trim());
+            }
+            "6" => {
+                print!("🗑️ ID yang mau dihapus: ");
+                io::stdout().flush().unwrap();
+                let mut id_i = String::new();
+                io::stdin().read_line(&mut id_i).unwrap();
+                if let Some(id) = BigUint::parse_bytes(id_i.trim().as_bytes(), 10) {
+                    db.delete_data(&id);
+                } else {
+                    println!("❌ ID salah!");
+                }
+            }
+            "7" => {
+                print!("💾 Nama Snapshot: ");
+                io::stdout().flush().unwrap();
+                let mut f = String::new();
+                io::stdin().read_line(&mut f).unwrap();
+                current_db_path = format_vodb_name(&f);
                 db.save_snapshot(&current_db_path);
             }
-
-            "6" => {
-                print!("📂 Nama snapshot yang mau di-load: ");
+            "8" => {
+                print!("📂 Load Snapshot: ");
                 io::stdout().flush().unwrap();
-                let mut file_name = String::new();
-                io::stdin().read_line(&mut file_name).unwrap();
-
-                // Ganti fokus ke file baru dan load
-                current_db_path = format_vodb_name(&file_name);
+                let mut f = String::new();
+                io::stdin().read_line(&mut f).unwrap();
+                current_db_path = format_vodb_name(&f);
                 db.load_snapshot(&current_db_path);
             }
-
-            "7" => {
-                println!(
-                    "💾 Menjalankan Auto-Save terakhir ke {}...",
-                    current_db_path
-                );
+            "9" => {
+                println!("💾 Auto-Saving to {}...", current_db_path);
                 db.save_snapshot(&current_db_path);
-                println!("👋 Sayonara, Mas Arson! DBMS Shutdown.");
+                println!("👋 Sayonara, Mas Arson! Engine Shutdown. 🚀");
                 break;
             }
-
-            _ => println!("❓ Pilihan tidak valid."),
+            _ => println!("❓ Pilihan tidak ada, Mas Arson."),
         }
     }
 }

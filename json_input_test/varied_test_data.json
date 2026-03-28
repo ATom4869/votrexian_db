@@ -1,0 +1,702 @@
+[
+  {
+    "data_id": "200000000000000000000",
+    "data_name": "000_welcome_msg.txt",
+    "data_type": "TEXT",
+    "data_is_encrypted": false,
+    "data_content": "VXNlcl8wOiBXZWxjb21lIHRvIFZvdHJleGlhbiE="
+  },
+  {
+    "data_id": "200000000000000000001",
+    "data_name": "000_documentation.md",
+    "data_type": "MARKDOWN",
+    "data_is_encrypted": false,
+    "data_content": "IyBQcm9qZWN0IEJsb2JiZXJYCkxvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIA=="
+  },
+  {
+    "data_id": "200000000000000000002",
+    "data_name": "000_config_prod.json",
+    "data_type": "JSON",
+    "data_is_encrypted": false,
+    "data_content": "eyJkYiI6ICJ2b2RiIiwgInBvcnQiOiA3MTAwLCAiYWN0aXZlIjogdHJ1ZX0="
+  },
+  {
+    "data_id": "200000000000000000003",
+    "data_name": "000_sensor_metrics.csv",
+    "data_type": "CSV",
+    "data_is_encrypted": false,
+    "data_content": "dGltZXN0YW1wLHRlbXAsdm9sdAoyMDI2LTAzLTI4LDMyLjUsMjIw"
+  },
+  {
+    "data_id": "200000000000000000004",
+    "data_name": "000_firmware_blob.bin",
+    "data_type": "BINARY",
+    "data_is_encrypted": false,
+    "data_content": "r4PB5hZumTqtMRQvMVcXXyGNyDFCE2DVHAWN/RrX1xZDYWE7beHYYPOlX288Pc2+58cmTItaj6xPZLc4FkbPi8EPpmuOYmCgzUlXAjvea0eIFkOUACdisY9Jyrk8rkxnGZZxjNc3HdxVGDGlvsYLqyiOXfPX56Fd8LE9Z8VwFfd6B6qGUG5epZKEYPKpMOmziuugrnOmd/uZOKh30nY7+CAS3i6A0pSbLEEUGeiq/LJy1GePk8h/YmkB4wiaH/QFVBKwt8mPmLAQZzBEr5a5yOIfS8z5qfQWKWFFhVxSiPgetuGshQFL2UzLYci1LYvSKAcePaerFB1Ak6QcKldZrSr/ACKMDp64BGfI00SvyWnkQo4PdWIeGDSxOLzFu5sAjGfOfD7NHEb09IfjwLZmMdBgPqphaHlJRcu+Rqg6zoqeXz5yy7FJKkC3ilQFOmXSfniEHPH/Dn3VPrQXIaOdL/wKzBhyfkqOsaDaVAMWU0MzogvZKtpIYsrStsz3Dmvk8o89DzoQX4l3DBsQR740E79uM+5NsCQYLb7eLwiVjGtQFmStw7clZNs22d0hfe4hLpmb16kjxcyYXE0xjSkUK40l4I3nYZwK8k0HqpqCYn9n9t4z4rje53is7+oWqNVP+YADLv9+tQGF4/RIi7rRnXhF0a88Pyi/DURMbUT0jPk="
+  },
+  {
+    "data_id": "200000000000000000005",
+    "data_name": "000_system_auth.log",
+    "data_type": "LOG",
+    "data_is_encrypted": false,
+    "data_content": "MjAyNi0wMy0yOCBbQVVUSF0gTG9naW4gc3VjY2VzcyBmb3IgdXNlcl9pZF8w"
+  },
+  {
+    "data_id": "200000000000000000006",
+    "data_name": "000_main_logic.rs",
+    "data_type": "RUST",
+    "data_is_encrypted": false,
+    "data_content": "Zm4gbWFpbigpIHsgcHJpbnRsbiEoIlZvdHJleGlhbiBFbmdpbmUgUnVubmluZyIpOyB9"
+  },
+  {
+    "data_id": "200000000000000000007",
+    "data_name": "000_encrypted_vault.key",
+    "data_type": "ENCRYPTED",
+    "data_is_encrypted": true,
+    "data_content": "SEVYXzdGODJBMUIyQzNENEU1RjY="
+  },
+  {
+    "data_id": "200000000000000000008",
+    "data_name": "000_user_preferences.bin",
+    "data_type": "BSON",
+    "data_is_encrypted": false,
+    "data_content": "W3RydWUsIGZhbHNlLCB0cnVlLCAwXQ=="
+  },
+  {
+    "data_id": "200000000000000000009",
+    "data_name": "000_engine_report.pdf",
+    "data_type": "PDF",
+    "data_is_encrypted": false,
+    "data_content": "JVBERi0xLjQgTW9jayBCaW5hcnkgQ29udGVudCCyW8EdOgZfcIUddeUpMrbW7ydzA6j9ljhWabSROY1RrY1k2eS/ddW3wiYbYJxNHLi1bNw77suiBjAGzHGgpAD14G+xz4Ys2ev42xGyZFH5FWcqX9CkrL1Xxh5mjG8G4JZx1QWc"
+  },
+  {
+    "data_id": "200000000000000000010",
+    "data_name": "001_welcome_msg.txt",
+    "data_type": "TEXT",
+    "data_is_encrypted": false,
+    "data_content": "VXNlcl8xOiBXZWxjb21lIHRvIFZvdHJleGlhbiE="
+  },
+  {
+    "data_id": "200000000000000000011",
+    "data_name": "001_documentation.md",
+    "data_type": "MARKDOWN",
+    "data_is_encrypted": false,
+    "data_content": "IyBQcm9qZWN0IEJsb2JiZXJYCkxvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIA=="
+  },
+  {
+    "data_id": "200000000000000000012",
+    "data_name": "001_config_prod.json",
+    "data_type": "JSON",
+    "data_is_encrypted": false,
+    "data_content": "eyJkYiI6ICJ2b2RiIiwgInBvcnQiOiA3MTAwLCAiYWN0aXZlIjogdHJ1ZX0="
+  },
+  {
+    "data_id": "200000000000000000013",
+    "data_name": "001_sensor_metrics.csv",
+    "data_type": "CSV",
+    "data_is_encrypted": false,
+    "data_content": "dGltZXN0YW1wLHRlbXAsdm9sdAoyMDI2LTAzLTI4LDMyLjUsMjIw"
+  },
+  {
+    "data_id": "200000000000000000014",
+    "data_name": "001_firmware_blob.bin",
+    "data_type": "BINARY",
+    "data_is_encrypted": false,
+    "data_content": "pVz4fOKL/U/gf9QInoikrcqFlIzIpba86YDWXKwtErGdQYtek7fBl0XMTJeJGeD29wG1zk8NiJzZN13s2Hn0RKtjc4fwqjZ36/USnGtoJ6xqqL5eOPnqU1SaagEJOjcdF8jtp1UAvrgL7Hb9tgHRthi1c4BStJ1AKoO5dcDQe3Ez3Tg7E9i9UoJwOX31p2zxkt0Ml1qSV+2QZRbHjj2LYzVY9BISPRa4n1DaZtBpzOH7or1nmJxhYBA1dDiIIDLN+LXnjDeFdmB2kmDG9P5+kFwhDn+3uJH2kbTfpK4LWFdSNWdTy9LlJ2w8PyEUzy+17/S1PeJLuJGCLmWjSXL6lYYRGNx+Qvq3ZoFbbIzvDyZ13Fi6SYbvDLfadlpLxr/2vpPv0SmMTn5CJnC/jb20CdEVPm1qMQZdWgoX3az7X4rVx+dZU4WmXViFYYjaIyQOne0NFf+oamh5bbQr54QNGEzXxCTPn0FNIL9etPpSND9J0XwWu97rJbgMvXDH16dxqBZUkgdHN+TQLT66eOoqT92v9arcd1Vx0ntuPRP9qoxHqkbBrVogPtSxfWfgAx0kj/kQEDKzdq6OGWcEcx7YEzi0uZE1zmwp4QXKw48UFbRaZr9tRAUDDzoDWq8vGmff62m0wBhdrG1DguU2GgfTfA839vEHKspRdU0Nc+YIBmw="
+  },
+  {
+    "data_id": "200000000000000000015",
+    "data_name": "001_system_auth.log",
+    "data_type": "LOG",
+    "data_is_encrypted": false,
+    "data_content": "MjAyNi0wMy0yOCBbQVVUSF0gTG9naW4gc3VjY2VzcyBmb3IgdXNlcl9pZF8x"
+  },
+  {
+    "data_id": "200000000000000000016",
+    "data_name": "001_main_logic.rs",
+    "data_type": "RUST",
+    "data_is_encrypted": false,
+    "data_content": "Zm4gbWFpbigpIHsgcHJpbnRsbiEoIlZvdHJleGlhbiBFbmdpbmUgUnVubmluZyIpOyB9"
+  },
+  {
+    "data_id": "200000000000000000017",
+    "data_name": "001_encrypted_vault.key",
+    "data_type": "ENCRYPTED",
+    "data_is_encrypted": true,
+    "data_content": "SEVYXzdGODJBMUIyQzNENEU1RjY="
+  },
+  {
+    "data_id": "200000000000000000018",
+    "data_name": "001_user_preferences.bin",
+    "data_type": "BSON",
+    "data_is_encrypted": false,
+    "data_content": "W3RydWUsIGZhbHNlLCB0cnVlLCAxXQ=="
+  },
+  {
+    "data_id": "200000000000000000019",
+    "data_name": "001_engine_report.pdf",
+    "data_type": "PDF",
+    "data_is_encrypted": false,
+    "data_content": "JVBERi0xLjQgTW9jayBCaW5hcnkgQ29udGVudCApI6YgcwGc2vi2nJZzJN9X3g/Ui/L90q76EZlpSpyh7gVBc6rgPHAMrHME02B4Z/KG3Q5dJFhIRn/AWgu7aTIId8fU5mwBsC2aaDXkgZ5sOeTKybcDWc9rtthlDQF5Cp7277ur"
+  },
+  {
+    "data_id": "200000000000000000020",
+    "data_name": "002_welcome_msg.txt",
+    "data_type": "TEXT",
+    "data_is_encrypted": false,
+    "data_content": "VXNlcl8yOiBXZWxjb21lIHRvIFZvdHJleGlhbiE="
+  },
+  {
+    "data_id": "200000000000000000021",
+    "data_name": "002_documentation.md",
+    "data_type": "MARKDOWN",
+    "data_is_encrypted": false,
+    "data_content": "IyBQcm9qZWN0IEJsb2JiZXJYCkxvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIA=="
+  },
+  {
+    "data_id": "200000000000000000022",
+    "data_name": "002_config_prod.json",
+    "data_type": "JSON",
+    "data_is_encrypted": false,
+    "data_content": "eyJkYiI6ICJ2b2RiIiwgInBvcnQiOiA3MTAwLCAiYWN0aXZlIjogdHJ1ZX0="
+  },
+  {
+    "data_id": "200000000000000000023",
+    "data_name": "002_sensor_metrics.csv",
+    "data_type": "CSV",
+    "data_is_encrypted": false,
+    "data_content": "dGltZXN0YW1wLHRlbXAsdm9sdAoyMDI2LTAzLTI4LDMyLjUsMjIw"
+  },
+  {
+    "data_id": "200000000000000000024",
+    "data_name": "002_firmware_blob.bin",
+    "data_type": "BINARY",
+    "data_is_encrypted": false,
+    "data_content": "We8OnWa9gsAab63ElmCL5UtdtU2kNNCrAVjqOQTVEQEoIUI7OJTp3eaDc+PIfzRQUuhynx00lweG6bwnv5rDAVPZaoo/GUWxf5paNKASipR1gS2dpmYjcJoxmkgYmHz3Q1hg1uhq9OgwhThjtvz80tAOthxaZHdoRPw/rktNLepUNt2PlZZo1uJpLti4mgPU5HhSXlJQPch9aa7pNpaUAd0ja91S5gh1VRBUt7dJonAnitMwDiGhNfynnaNO4VTY/LQpSRM1XBLhr0nRH82WpZwDwAqw9OE91BpTMPmgxz1NteEe0M+i8aqgi3x8cp4pYWQj1fbMifJq5l7w4cQfdw09FkjrVUC8aseTkLqnH7AAX0Jx1tqmrVlcISf7RWgJklYfPc9f+cyCTE9Gv2N3M1D6yGF/bapusHVDGGtQvFS94zBrN4krjZIqdSZTghwZexX2sv25pFT7Lm1txa5oa352groBN88awrS6htb76S1+iTnuzXajA7v3hvYObLMoj0hmXFvnJsqxagHQj/4iwsKi4+pJIn9w1dJ8E6h5UPR0E9vjH99CYQX5SJ/VJQPoojmmGohM7DjACtMTBwHekAMxegTzxZ6L+o18GqyCcaeZkeR17hlaSDtsQFom19QDv0gMiVLWmTP75MiqF3ErWaVwa6GGj6JKnMf4lSWwdx4="
+  },
+  {
+    "data_id": "200000000000000000025",
+    "data_name": "002_system_auth.log",
+    "data_type": "LOG",
+    "data_is_encrypted": false,
+    "data_content": "MjAyNi0wMy0yOCBbQVVUSF0gTG9naW4gc3VjY2VzcyBmb3IgdXNlcl9pZF8y"
+  },
+  {
+    "data_id": "200000000000000000026",
+    "data_name": "002_main_logic.rs",
+    "data_type": "RUST",
+    "data_is_encrypted": false,
+    "data_content": "Zm4gbWFpbigpIHsgcHJpbnRsbiEoIlZvdHJleGlhbiBFbmdpbmUgUnVubmluZyIpOyB9"
+  },
+  {
+    "data_id": "200000000000000000027",
+    "data_name": "002_encrypted_vault.key",
+    "data_type": "ENCRYPTED",
+    "data_is_encrypted": true,
+    "data_content": "SEVYXzdGODJBMUIyQzNENEU1RjY="
+  },
+  {
+    "data_id": "200000000000000000028",
+    "data_name": "002_user_preferences.bin",
+    "data_type": "BSON",
+    "data_is_encrypted": false,
+    "data_content": "W3RydWUsIGZhbHNlLCB0cnVlLCAyXQ=="
+  },
+  {
+    "data_id": "200000000000000000029",
+    "data_name": "002_engine_report.pdf",
+    "data_type": "PDF",
+    "data_is_encrypted": false,
+    "data_content": "JVBERi0xLjQgTW9jayBCaW5hcnkgQ29udGVudCDgRJTVrs6t6S2OAsOycbNiYnbrbWksOSEtC/4KoY6kWbGYz/N7gfSrYNioYhHgGof5mwAUoSgkMEG/a3eeoqt73ibSLjUBygWo4flJ4Apu3nzlhMAJ7s5IAc1+DRYl4arEuMG8"
+  },
+  {
+    "data_id": "200000000000000000030",
+    "data_name": "003_welcome_msg.txt",
+    "data_type": "TEXT",
+    "data_is_encrypted": false,
+    "data_content": "VXNlcl8zOiBXZWxjb21lIHRvIFZvdHJleGlhbiE="
+  },
+  {
+    "data_id": "200000000000000000031",
+    "data_name": "003_documentation.md",
+    "data_type": "MARKDOWN",
+    "data_is_encrypted": false,
+    "data_content": "IyBQcm9qZWN0IEJsb2JiZXJYCkxvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIA=="
+  },
+  {
+    "data_id": "200000000000000000032",
+    "data_name": "003_config_prod.json",
+    "data_type": "JSON",
+    "data_is_encrypted": false,
+    "data_content": "eyJkYiI6ICJ2b2RiIiwgInBvcnQiOiA3MTAwLCAiYWN0aXZlIjogdHJ1ZX0="
+  },
+  {
+    "data_id": "200000000000000000033",
+    "data_name": "003_sensor_metrics.csv",
+    "data_type": "CSV",
+    "data_is_encrypted": false,
+    "data_content": "dGltZXN0YW1wLHRlbXAsdm9sdAoyMDI2LTAzLTI4LDMyLjUsMjIw"
+  },
+  {
+    "data_id": "200000000000000000034",
+    "data_name": "003_firmware_blob.bin",
+    "data_type": "BINARY",
+    "data_is_encrypted": false,
+    "data_content": "qbzVL+sK/ss5/uNX+1lcBKbLdfmc1QwzSUXxUxBxvgHO3ITToR+MdT0n4R1FmmVYDIaII0Y4ONCZgWro1ZlHZH1P9Bv9ZQR9qvbuAS4EnYSo7jVvMXf2EWdZkRR3qwGdk4my8UmGvwgfQcc2JokXDgeXqePKXy7VytXjwDSsJNlOUvLSEzhLjq8qmt9575NHtN2MimheNl3Enrv/vDpyP5Vw7eaZsjJpeXwE8G8QKUdBDUYxKtgqm4CBxBAL0iFHAsK7FCEBtHAHzdSVr7GLjy7SIXUAXefovcGmDdg1Z4a099gL30TTQjpqsM/8ve9wiuD24rGYV9qcPtnnFpCqyiEARgSdUdX4Cd3GiGADK+wKJHs2xEEJ8IlcRLxpXAKVCW+hkVvPUBWjnv3PnRFEUZdtLMNsNacOd22BLnfXku43pwYgt46Gu4LPzqRiHXieDu9YhE+N5zb/09H7q/Uk1/VLO3ofeHsTXh9BE6ZH1I81ZIoOr2u3EDyae4oKARxAUlwtWDvZAtCQqLxJR4SF5JCn4Gj6oci0jTOPk/KP32JK4ckPpuJTdFpm7wsi2f3sEf9l+Abyr2zT9bCA0WlFOJ/Wqfm0JnalZeY7Dlv6BPVEc6OsNsWplDK9FIxepEcZOe4y75M9VVzDEFMW3S/xZXKdoeSNEJzYaceP0vSa+gk="
+  },
+  {
+    "data_id": "200000000000000000035",
+    "data_name": "003_system_auth.log",
+    "data_type": "LOG",
+    "data_is_encrypted": false,
+    "data_content": "MjAyNi0wMy0yOCBbQVVUSF0gTG9naW4gc3VjY2VzcyBmb3IgdXNlcl9pZF8z"
+  },
+  {
+    "data_id": "200000000000000000036",
+    "data_name": "003_main_logic.rs",
+    "data_type": "RUST",
+    "data_is_encrypted": false,
+    "data_content": "Zm4gbWFpbigpIHsgcHJpbnRsbiEoIlZvdHJleGlhbiBFbmdpbmUgUnVubmluZyIpOyB9"
+  },
+  {
+    "data_id": "200000000000000000037",
+    "data_name": "003_encrypted_vault.key",
+    "data_type": "ENCRYPTED",
+    "data_is_encrypted": true,
+    "data_content": "SEVYXzdGODJBMUIyQzNENEU1RjY="
+  },
+  {
+    "data_id": "200000000000000000038",
+    "data_name": "003_user_preferences.bin",
+    "data_type": "BSON",
+    "data_is_encrypted": false,
+    "data_content": "W3RydWUsIGZhbHNlLCB0cnVlLCAzXQ=="
+  },
+  {
+    "data_id": "200000000000000000039",
+    "data_name": "003_engine_report.pdf",
+    "data_type": "PDF",
+    "data_is_encrypted": false,
+    "data_content": "JVBERi0xLjQgTW9jayBCaW5hcnkgQ29udGVudCBaSW9BmZnKhaUY+yHafuCmAxBRL9wn5OmCvox6649p/stVt91MP92X3Zwj5o5C43LqBmJHxXZHxzpkHdsEeDc3D+xnw2Q7s3AEoLKyuKj/oTVOhBK+A3YKKN3eSbrE99+hN8Fu"
+  },
+  {
+    "data_id": "200000000000000000040",
+    "data_name": "004_welcome_msg.txt",
+    "data_type": "TEXT",
+    "data_is_encrypted": false,
+    "data_content": "VXNlcl80OiBXZWxjb21lIHRvIFZvdHJleGlhbiE="
+  },
+  {
+    "data_id": "200000000000000000041",
+    "data_name": "004_documentation.md",
+    "data_type": "MARKDOWN",
+    "data_is_encrypted": false,
+    "data_content": "IyBQcm9qZWN0IEJsb2JiZXJYCkxvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIA=="
+  },
+  {
+    "data_id": "200000000000000000042",
+    "data_name": "004_config_prod.json",
+    "data_type": "JSON",
+    "data_is_encrypted": false,
+    "data_content": "eyJkYiI6ICJ2b2RiIiwgInBvcnQiOiA3MTAwLCAiYWN0aXZlIjogdHJ1ZX0="
+  },
+  {
+    "data_id": "200000000000000000043",
+    "data_name": "004_sensor_metrics.csv",
+    "data_type": "CSV",
+    "data_is_encrypted": false,
+    "data_content": "dGltZXN0YW1wLHRlbXAsdm9sdAoyMDI2LTAzLTI4LDMyLjUsMjIw"
+  },
+  {
+    "data_id": "200000000000000000044",
+    "data_name": "004_firmware_blob.bin",
+    "data_type": "BINARY",
+    "data_is_encrypted": false,
+    "data_content": "Vzx0owoB29aL3Ral1L0j4BS1xanVy1fOPeTKMMO2LhZOv2TKeReFyxTxEhImvDITuLgWBARTJsbQORof9Moe0hCt2CeWxv/nzMsDr02Bx7OMCb9qk2/vh+FG55V6QTlHqXwg9ol2zZfWmouPx44TSiXuy5GjwhM0scTL5uvPTvAmeOkyhZ69VVMY5qA4OX0m5NDUalqY//TyGPe1EE00mdoKWaJYvu212NiWxoUdtocPD0Wo9hQxQivfl7ZFn9hUBJGIWBfXi3bsUx/ZROqKdhb/zwDa+v5lgns6pQ58Ak8oob0W4EIqTW6EbeXFsk4HZ9MfajS6DWs0xXDOseZv7GjT+qCjc/Pe4ttOlX1/4i63DLmql3yDAeQkVMYj9Soa030xcsYRPIQ7C2Z9Qv0pDYfXTJPgCN0RcaVjSzJDnTkEfSII/e9bIfCPnN7aNxwSS6ZuxdRACT9P67XynRroGJbBDv4Hx9pI8IjS8//ICItsjGMYNGYwKoucp3udMvsuAMNNWzI5QscXfC+wL4C6TyDC3zRgWCRykfB6clBKgA8csMtiZ5WmmHNf+bln8+IOVo+kyedmCIDBhEwYqEN0ZirGiLSdOUGKbYf+ENsNDTpOo0wT5gFzcgqF+v0bAH1iWTSSdneQYPnGrjmhQvf2hDCAiicLvdvVG+1y8X7vGRE="
+  },
+  {
+    "data_id": "200000000000000000045",
+    "data_name": "004_system_auth.log",
+    "data_type": "LOG",
+    "data_is_encrypted": false,
+    "data_content": "MjAyNi0wMy0yOCBbQVVUSF0gTG9naW4gc3VjY2VzcyBmb3IgdXNlcl9pZF80"
+  },
+  {
+    "data_id": "200000000000000000046",
+    "data_name": "004_main_logic.rs",
+    "data_type": "RUST",
+    "data_is_encrypted": false,
+    "data_content": "Zm4gbWFpbigpIHsgcHJpbnRsbiEoIlZvdHJleGlhbiBFbmdpbmUgUnVubmluZyIpOyB9"
+  },
+  {
+    "data_id": "200000000000000000047",
+    "data_name": "004_encrypted_vault.key",
+    "data_type": "ENCRYPTED",
+    "data_is_encrypted": true,
+    "data_content": "SEVYXzdGODJBMUIyQzNENEU1RjY="
+  },
+  {
+    "data_id": "200000000000000000048",
+    "data_name": "004_user_preferences.bin",
+    "data_type": "BSON",
+    "data_is_encrypted": false,
+    "data_content": "W3RydWUsIGZhbHNlLCB0cnVlLCA0XQ=="
+  },
+  {
+    "data_id": "200000000000000000049",
+    "data_name": "004_engine_report.pdf",
+    "data_type": "PDF",
+    "data_is_encrypted": false,
+    "data_content": "JVBERi0xLjQgTW9jayBCaW5hcnkgQ29udGVudCDj1fTLuDtHhG9DcMzO82R53tMER7++kS6ea1mC6dYL73Pxr1pF/VuX2Xfr6PAQwNNciO0ZL5ilGJy7DpbEgWwNuWiejlEolmwZlDjUwg1ClyoXTRuQlvr0hhVe94zZhm6S1LxO"
+  },
+  {
+    "data_id": "200000000000000000050",
+    "data_name": "005_welcome_msg.txt",
+    "data_type": "TEXT",
+    "data_is_encrypted": false,
+    "data_content": "VXNlcl81OiBXZWxjb21lIHRvIFZvdHJleGlhbiE="
+  },
+  {
+    "data_id": "200000000000000000051",
+    "data_name": "005_documentation.md",
+    "data_type": "MARKDOWN",
+    "data_is_encrypted": false,
+    "data_content": "IyBQcm9qZWN0IEJsb2JiZXJYCkxvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIA=="
+  },
+  {
+    "data_id": "200000000000000000052",
+    "data_name": "005_config_prod.json",
+    "data_type": "JSON",
+    "data_is_encrypted": false,
+    "data_content": "eyJkYiI6ICJ2b2RiIiwgInBvcnQiOiA3MTAwLCAiYWN0aXZlIjogdHJ1ZX0="
+  },
+  {
+    "data_id": "200000000000000000053",
+    "data_name": "005_sensor_metrics.csv",
+    "data_type": "CSV",
+    "data_is_encrypted": false,
+    "data_content": "dGltZXN0YW1wLHRlbXAsdm9sdAoyMDI2LTAzLTI4LDMyLjUsMjIw"
+  },
+  {
+    "data_id": "200000000000000000054",
+    "data_name": "005_firmware_blob.bin",
+    "data_type": "BINARY",
+    "data_is_encrypted": false,
+    "data_content": "VRm5dCOSlCcv9tqwLKixM1GATXAFmWezXQNOQjNNdTFxlvB0df+x7WibRQp9g96iNkmKRYoS33pxXiD3idVwnuCmW/oBQtva7XKsyQHLo4lSQBUzz1GWoXmGpNPll5k0E5GAqBazA8yE8hKAfNibgFkATAdQj737RzFshWoX+2XRsuUYDZ7/6f448bdsdsRp7BwKFFCwegU9UoOS+uAbgBS4o4AIxlpiri64Sl0p0iIXzqDPuUwWuM/57rlrqSdLidc1vF2j/sE8R4bRm/o0xQr3qWXCsiHCxr3tVJja6t2hUEEKK/sJwEqranFvr08R70Qyc4c/CwOLNqoQQYzqRe4inJCfnEzJsiUZR7mLdgnAJHsU2RFU8yEuk/pPXEY5w4sIubWSJyWAUEQJqeRw2LJI1vsMV6APRo60WlVitLuMjs635vPvuMkcsFfqXGS6tdLhCfQ5YtR6ot7wEVhOYf3h3sVuEEpVk8+G+V5AhftepTwDB8VI+Zj3blSMnS5IkPDMGeHCWUdySqCZSNgXMGJBZO/o+MEBCYcWOFS4YKBmnjE2rnh1G7fi8WkWv4oCSEa4c8mKIG0rwo9gkPIyYBD8b/B5jaQlOEyitMLqqcUiSxDTnyjt1clLt5yJ+fxaAL9nIHsWDFY1j0cQECs68IbETz/Bs7vpDQq3JZQbrq8="
+  },
+  {
+    "data_id": "200000000000000000055",
+    "data_name": "005_system_auth.log",
+    "data_type": "LOG",
+    "data_is_encrypted": false,
+    "data_content": "MjAyNi0wMy0yOCBbQVVUSF0gTG9naW4gc3VjY2VzcyBmb3IgdXNlcl9pZF81"
+  },
+  {
+    "data_id": "200000000000000000056",
+    "data_name": "005_main_logic.rs",
+    "data_type": "RUST",
+    "data_is_encrypted": false,
+    "data_content": "Zm4gbWFpbigpIHsgcHJpbnRsbiEoIlZvdHJleGlhbiBFbmdpbmUgUnVubmluZyIpOyB9"
+  },
+  {
+    "data_id": "200000000000000000057",
+    "data_name": "005_encrypted_vault.key",
+    "data_type": "ENCRYPTED",
+    "data_is_encrypted": true,
+    "data_content": "SEVYXzdGODJBMUIyQzNENEU1RjY="
+  },
+  {
+    "data_id": "200000000000000000058",
+    "data_name": "005_user_preferences.bin",
+    "data_type": "BSON",
+    "data_is_encrypted": false,
+    "data_content": "W3RydWUsIGZhbHNlLCB0cnVlLCA1XQ=="
+  },
+  {
+    "data_id": "200000000000000000059",
+    "data_name": "005_engine_report.pdf",
+    "data_type": "PDF",
+    "data_is_encrypted": false,
+    "data_content": "JVBERi0xLjQgTW9jayBCaW5hcnkgQ29udGVudCDiJ5UIU46LZm6zbqcPLBuDH1tost3+/Y9YTb0EANM4q/winY083xNKo5EY6/vztdx6eaLxsLFOseLU5yyC5qTFzbNbJdMk0d4OLabJqeqzryiL9qO4aD1kNLtUjCmOVo/UAr+l"
+  },
+  {
+    "data_id": "200000000000000000060",
+    "data_name": "006_welcome_msg.txt",
+    "data_type": "TEXT",
+    "data_is_encrypted": false,
+    "data_content": "VXNlcl82OiBXZWxjb21lIHRvIFZvdHJleGlhbiE="
+  },
+  {
+    "data_id": "200000000000000000061",
+    "data_name": "006_documentation.md",
+    "data_type": "MARKDOWN",
+    "data_is_encrypted": false,
+    "data_content": "IyBQcm9qZWN0IEJsb2JiZXJYCkxvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIA=="
+  },
+  {
+    "data_id": "200000000000000000062",
+    "data_name": "006_config_prod.json",
+    "data_type": "JSON",
+    "data_is_encrypted": false,
+    "data_content": "eyJkYiI6ICJ2b2RiIiwgInBvcnQiOiA3MTAwLCAiYWN0aXZlIjogdHJ1ZX0="
+  },
+  {
+    "data_id": "200000000000000000063",
+    "data_name": "006_sensor_metrics.csv",
+    "data_type": "CSV",
+    "data_is_encrypted": false,
+    "data_content": "dGltZXN0YW1wLHRlbXAsdm9sdAoyMDI2LTAzLTI4LDMyLjUsMjIw"
+  },
+  {
+    "data_id": "200000000000000000064",
+    "data_name": "006_firmware_blob.bin",
+    "data_type": "BINARY",
+    "data_is_encrypted": false,
+    "data_content": "xdQ3l4r1U5+6U+S66mXRNwjve8Uez4yT1TAHciU1/vxSkAnjRCZmipNJu+hPJDyWWAc9vKAiM64WsFI11NWxsYwrHSaxwHwKPqzyeULSr/PH7bmp6kGAfyTlmkDmEp+3HWtgRHkjqltIS4SSvG9WzITQltjFtTns5/oqSGBatxhD24ZW5lfnVW/mIawT87BJTODdLUOzh57bhLAipSuZdKhZGmqPsF2JdqXBVxiOIH8W07vUgQ24mnICTMcOpMV7+LydGyq5/sjQnWa3lxi72MYxQcKWSwOI2fc1t/KfzMzQtAcMEl8fbjvDFRNcfbVsNWDf9z8LBxAd9poafgT4GvLtAd9/1wecpXlwoZKp2mcnxoC6W7iaWZ+88z96CNjWei/3AWByq8H1ZVJHKyyC1IXVhLhlFwlOwelSocwyxZ9DKUg+Ur/RQiw74zo98R5nAA0H+zGT6J3fmeu60I7UuCN8wMZ7KPkuEcEUq1RybRibm47NnCDI5jAVtnqi+YngAPvpq1RCH6luxUkGko6tXfkPgaT3wW+ocPOxjgSoKqavTqNmJobZ8+ALZBIfCbzJTP65gVcFbXwRR/BgCnvlaijzezzgY0J3ibyuryLO0sKbC/CXynYhtjrMmfhcC5daeD1zSGokSVcHf0kxe5he2Kh//OnEMaZOF0c/g2QKXow="
+  },
+  {
+    "data_id": "200000000000000000065",
+    "data_name": "006_system_auth.log",
+    "data_type": "LOG",
+    "data_is_encrypted": false,
+    "data_content": "MjAyNi0wMy0yOCBbQVVUSF0gTG9naW4gc3VjY2VzcyBmb3IgdXNlcl9pZF82"
+  },
+  {
+    "data_id": "200000000000000000066",
+    "data_name": "006_main_logic.rs",
+    "data_type": "RUST",
+    "data_is_encrypted": false,
+    "data_content": "Zm4gbWFpbigpIHsgcHJpbnRsbiEoIlZvdHJleGlhbiBFbmdpbmUgUnVubmluZyIpOyB9"
+  },
+  {
+    "data_id": "200000000000000000067",
+    "data_name": "006_encrypted_vault.key",
+    "data_type": "ENCRYPTED",
+    "data_is_encrypted": true,
+    "data_content": "SEVYXzdGODJBMUIyQzNENEU1RjY="
+  },
+  {
+    "data_id": "200000000000000000068",
+    "data_name": "006_user_preferences.bin",
+    "data_type": "BSON",
+    "data_is_encrypted": false,
+    "data_content": "W3RydWUsIGZhbHNlLCB0cnVlLCA2XQ=="
+  },
+  {
+    "data_id": "200000000000000000069",
+    "data_name": "006_engine_report.pdf",
+    "data_type": "PDF",
+    "data_is_encrypted": false,
+    "data_content": "JVBERi0xLjQgTW9jayBCaW5hcnkgQ29udGVudCByHelkWcK4aEmaYIi/06BDInyhLTYVnvCpXrVUKI1JDx7Kh6sfw1ZfW707MWHVvwjhwt52IyvjxsIdamHP5D/tL3jBGIjPWKJX6sjOeZG3dUeBcsolcPOcT1eOUN/KOWF2bgFm"
+  },
+  {
+    "data_id": "200000000000000000070",
+    "data_name": "007_welcome_msg.txt",
+    "data_type": "TEXT",
+    "data_is_encrypted": false,
+    "data_content": "VXNlcl83OiBXZWxjb21lIHRvIFZvdHJleGlhbiE="
+  },
+  {
+    "data_id": "200000000000000000071",
+    "data_name": "007_documentation.md",
+    "data_type": "MARKDOWN",
+    "data_is_encrypted": false,
+    "data_content": "IyBQcm9qZWN0IEJsb2JiZXJYCkxvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIA=="
+  },
+  {
+    "data_id": "200000000000000000072",
+    "data_name": "007_config_prod.json",
+    "data_type": "JSON",
+    "data_is_encrypted": false,
+    "data_content": "eyJkYiI6ICJ2b2RiIiwgInBvcnQiOiA3MTAwLCAiYWN0aXZlIjogdHJ1ZX0="
+  },
+  {
+    "data_id": "200000000000000000073",
+    "data_name": "007_sensor_metrics.csv",
+    "data_type": "CSV",
+    "data_is_encrypted": false,
+    "data_content": "dGltZXN0YW1wLHRlbXAsdm9sdAoyMDI2LTAzLTI4LDMyLjUsMjIw"
+  },
+  {
+    "data_id": "200000000000000000074",
+    "data_name": "007_firmware_blob.bin",
+    "data_type": "BINARY",
+    "data_is_encrypted": false,
+    "data_content": "qkFaN0S5IzG5lEQdJzuEDy/03SiefJ9t78qSMoPbT91uGA6qhtlKyIm6PyUgktbgiHb1RGQWV1ncHNqe8JkfIFmdxy4X6Z68dnDczQ8KCe8qGj6ruNaFNQEn3DKZ24mxG3zpvBi0zusgh8cg7XO+aiOTJ/NW10Te9rnpP5uao1hAa8/wsVdtJV1lWyrCaLY7HAIfCDktByGQC7M65A7/52wfTkBUJdJw7l+hsauu2qkz7rXSt5oYvPapejyML57aQEC293i6qB7DDC0z8kpD9Qyemhomfn7WojJImPfYBRX3tich0e1s3u9d24XMFfxQRVFzPWQDPrunkK2BRZGTl2EvW50eDprWmal6Aqb0pVJ0UhIH7tBBqZgFFIHkLV+F21zWvKQxjFHFbGjTFX9r0lJGM8eBTAxcZq0zi5j4md/t+WhraHD4ngboClFC97y5CMTvmFeD5QSadK68QJQtzgg+oCUyR4Rg7p8VKH8eD0wc39SjykXLBJU1LRxiE5K5dCw0ki9rilyWL4q03i/kZWvSi07hYhodRNcw3CLJiceKJZto5EbH7G5oDmjMyv9kCfnOuCZ0vgIZiGPFY1hyvEw9WUhR8ZdXffHEIutavVW63bGs9/j4Gc4p4G7pUC04WYy4iPCJwBBaRJf2DoSizSLNf4oTin469DW/Tv4XXng="
+  },
+  {
+    "data_id": "200000000000000000075",
+    "data_name": "007_system_auth.log",
+    "data_type": "LOG",
+    "data_is_encrypted": false,
+    "data_content": "MjAyNi0wMy0yOCBbQVVUSF0gTG9naW4gc3VjY2VzcyBmb3IgdXNlcl9pZF83"
+  },
+  {
+    "data_id": "200000000000000000076",
+    "data_name": "007_main_logic.rs",
+    "data_type": "RUST",
+    "data_is_encrypted": false,
+    "data_content": "Zm4gbWFpbigpIHsgcHJpbnRsbiEoIlZvdHJleGlhbiBFbmdpbmUgUnVubmluZyIpOyB9"
+  },
+  {
+    "data_id": "200000000000000000077",
+    "data_name": "007_encrypted_vault.key",
+    "data_type": "ENCRYPTED",
+    "data_is_encrypted": true,
+    "data_content": "SEVYXzdGODJBMUIyQzNENEU1RjY="
+  },
+  {
+    "data_id": "200000000000000000078",
+    "data_name": "007_user_preferences.bin",
+    "data_type": "BSON",
+    "data_is_encrypted": false,
+    "data_content": "W3RydWUsIGZhbHNlLCB0cnVlLCA3XQ=="
+  },
+  {
+    "data_id": "200000000000000000079",
+    "data_name": "007_engine_report.pdf",
+    "data_type": "PDF",
+    "data_is_encrypted": false,
+    "data_content": "JVBERi0xLjQgTW9jayBCaW5hcnkgQ29udGVudCAPN1RgNu2xjAFBXRjpfxszgqXbD8iOSV99Npi33+AzpSkLO1SUdeCt0Eq5pVzAraYbDF9lFflUAjBBPz/Df1UnO/4qK9unOdzA8f/qExgOXsrX2olGdbl7t2gixs+e4yGo5Ptb"
+  },
+  {
+    "data_id": "200000000000000000080",
+    "data_name": "008_welcome_msg.txt",
+    "data_type": "TEXT",
+    "data_is_encrypted": false,
+    "data_content": "VXNlcl84OiBXZWxjb21lIHRvIFZvdHJleGlhbiE="
+  },
+  {
+    "data_id": "200000000000000000081",
+    "data_name": "008_documentation.md",
+    "data_type": "MARKDOWN",
+    "data_is_encrypted": false,
+    "data_content": "IyBQcm9qZWN0IEJsb2JiZXJYCkxvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIA=="
+  },
+  {
+    "data_id": "200000000000000000082",
+    "data_name": "008_config_prod.json",
+    "data_type": "JSON",
+    "data_is_encrypted": false,
+    "data_content": "eyJkYiI6ICJ2b2RiIiwgInBvcnQiOiA3MTAwLCAiYWN0aXZlIjogdHJ1ZX0="
+  },
+  {
+    "data_id": "200000000000000000083",
+    "data_name": "008_sensor_metrics.csv",
+    "data_type": "CSV",
+    "data_is_encrypted": false,
+    "data_content": "dGltZXN0YW1wLHRlbXAsdm9sdAoyMDI2LTAzLTI4LDMyLjUsMjIw"
+  },
+  {
+    "data_id": "200000000000000000084",
+    "data_name": "008_firmware_blob.bin",
+    "data_type": "BINARY",
+    "data_is_encrypted": false,
+    "data_content": "np92+q/ta4cIgDKF/P4yI5mt3ayCIaZaoICF0jb8CIwTREOPRMfSCsJqGLgk/tb8vty9foAeW6N/T9vTGFL46OYcGMWKUfgDH0Gggpj1PIlPhMz4vMOTu1CzJPFjB6JN6LKADdi/dpyl6zBK/FTZwRBQdufELIEPelmGtg9I6Iyn54Dk8wokjLgFbK7xLSmcHfn/n3VLBYeXotIcfeYMR9Vw2ll0fmNovBLim93BGLfvMdqL3aXY165dZuxC0uzGZYOQB58RZG5QvCWTCuDSNI9pJi5nUU2/eshYyNFoTYSCGBUjVdySxExN29RDpBZ9o+j6CukoqTbdxfAhTUs5NWg1zhxojWL5N5k64dEN3x6dG1UK08tsetCoLtrc3QMJ1B76B6wiORhsPDCMjYypRlkI+HGxTb0ZkzSC0yw3QMt1ozNPdqt5xVswi8yQ5Ih8IrcBM6NzOnnJVcRghstTyXeMW9KEw7lSg1YGTt9Cg7zQKzYaqGg4wuyWun6YNwHaUhSYIgC2DB9Naf73OvZuisiABiTR22Hzl82M6Akb0o/npd8mpl+QKtRv/2bIFgiNVrmX/G7GPDVpHUoTPmoQYWw8kQ06v74qD36g5gAd+zNlTRPbEEovXNtMjroBqr2zyYBPcDlL7J+7thR4D21BwCUXibpRmU+64HaY7yyrSo0="
+  },
+  {
+    "data_id": "200000000000000000085",
+    "data_name": "008_system_auth.log",
+    "data_type": "LOG",
+    "data_is_encrypted": false,
+    "data_content": "MjAyNi0wMy0yOCBbQVVUSF0gTG9naW4gc3VjY2VzcyBmb3IgdXNlcl9pZF84"
+  },
+  {
+    "data_id": "200000000000000000086",
+    "data_name": "008_main_logic.rs",
+    "data_type": "RUST",
+    "data_is_encrypted": false,
+    "data_content": "Zm4gbWFpbigpIHsgcHJpbnRsbiEoIlZvdHJleGlhbiBFbmdpbmUgUnVubmluZyIpOyB9"
+  },
+  {
+    "data_id": "200000000000000000087",
+    "data_name": "008_encrypted_vault.key",
+    "data_type": "ENCRYPTED",
+    "data_is_encrypted": true,
+    "data_content": "SEVYXzdGODJBMUIyQzNENEU1RjY="
+  },
+  {
+    "data_id": "200000000000000000088",
+    "data_name": "008_user_preferences.bin",
+    "data_type": "BSON",
+    "data_is_encrypted": false,
+    "data_content": "W3RydWUsIGZhbHNlLCB0cnVlLCA4XQ=="
+  },
+  {
+    "data_id": "200000000000000000089",
+    "data_name": "008_engine_report.pdf",
+    "data_type": "PDF",
+    "data_is_encrypted": false,
+    "data_content": "JVBERi0xLjQgTW9jayBCaW5hcnkgQ29udGVudCBiwL8bG5NfOhj8tep6bR2vZsGHWYcs522dJO2xiTktkSGfaA+yncPBv2B2ER7gguNtHfvFQPnZdsZx90W2czlitF63Qa/gYSZX4bEz0G7IZlCDG89HkuSfxqNETJ9eHvqHm50/"
+  },
+  {
+    "data_id": "200000000000000000090",
+    "data_name": "009_welcome_msg.txt",
+    "data_type": "TEXT",
+    "data_is_encrypted": false,
+    "data_content": "VXNlcl85OiBXZWxjb21lIHRvIFZvdHJleGlhbiE="
+  },
+  {
+    "data_id": "200000000000000000091",
+    "data_name": "009_documentation.md",
+    "data_type": "MARKDOWN",
+    "data_is_encrypted": false,
+    "data_content": "IyBQcm9qZWN0IEJsb2JiZXJYCkxvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIExvcmVtIElwc3VtIA=="
+  },
+  {
+    "data_id": "200000000000000000092",
+    "data_name": "009_config_prod.json",
+    "data_type": "JSON",
+    "data_is_encrypted": false,
+    "data_content": "eyJkYiI6ICJ2b2RiIiwgInBvcnQiOiA3MTAwLCAiYWN0aXZlIjogdHJ1ZX0="
+  },
+  {
+    "data_id": "200000000000000000093",
+    "data_name": "009_sensor_metrics.csv",
+    "data_type": "CSV",
+    "data_is_encrypted": false,
+    "data_content": "dGltZXN0YW1wLHRlbXAsdm9sdAoyMDI2LTAzLTI4LDMyLjUsMjIw"
+  },
+  {
+    "data_id": "200000000000000000094",
+    "data_name": "009_firmware_blob.bin",
+    "data_type": "BINARY",
+    "data_is_encrypted": false,
+    "data_content": "aYFhkzB3BBcvxv+Sz6nERH8ZQoGY0YiMZZT4X4inn1QKVYMfyqTVOlyWYEu/94InejiWJQ5KiIc0TpT3J9Jh+MeyvIBmZuJbTlX2FAzAXowDO4d6Xmiv5MWxOJHWGvVbLoLmE71tN75rC9Kr5ZDMzN+L+OvJOublTtXNtIP2AeR+M1NB25YARt3HBq7rzvoZWYZZMbZfp9Qa3tx1/nE2j5DEtj2VTpTiJCO6szSE/X6dqS4Uo/ZYGUhtDL++TUl6wuuVuT6JqGBE2KZ5Tns8oDLWbup5SxKZIiAXk83PgIhGAwoPrSZB+ZXHobCUo6B1ZB8tiwitjodL2oHOFXxOInqEJY9ZHVuCi0SZPVNV023MgSAOKDJUNRrgsUxydnGuKGn1RQXBDomvUuISENoFFW0FGFwkQbvADWBiOB3OZnEO5yQSzF/oJ22Fom1n/F6sf8AU0Yc/31vBfQ8+6wt53R+FteJHwHemhRDk3bFX6qpL0kgheJv3hSmnsmKM5u2e6l8x65yq4VZ4RmBIlNpRKp95h2mqjEHkzCRcq2gkE3ecjZKTGf+Qw/8vy4hDtAWtEZCl6TPQMPQ/+cqn20DJbw6Xo/59BjOE2+FcLH8cvHBWaIkq0iWylQENCLOhvmepCkT2qNf9jpmOzQZ97/+z1CXO00KzrRfQbv3waiw0rjM="
+  },
+  {
+    "data_id": "200000000000000000095",
+    "data_name": "009_system_auth.log",
+    "data_type": "LOG",
+    "data_is_encrypted": false,
+    "data_content": "MjAyNi0wMy0yOCBbQVVUSF0gTG9naW4gc3VjY2VzcyBmb3IgdXNlcl9pZF85"
+  },
+  {
+    "data_id": "200000000000000000096",
+    "data_name": "009_main_logic.rs",
+    "data_type": "RUST",
+    "data_is_encrypted": false,
+    "data_content": "Zm4gbWFpbigpIHsgcHJpbnRsbiEoIlZvdHJleGlhbiBFbmdpbmUgUnVubmluZyIpOyB9"
+  },
+  {
+    "data_id": "200000000000000000097",
+    "data_name": "009_encrypted_vault.key",
+    "data_type": "ENCRYPTED",
+    "data_is_encrypted": true,
+    "data_content": "SEVYXzdGODJBMUIyQzNENEU1RjY="
+  },
+  {
+    "data_id": "200000000000000000098",
+    "data_name": "009_user_preferences.bin",
+    "data_type": "BSON",
+    "data_is_encrypted": false,
+    "data_content": "W3RydWUsIGZhbHNlLCB0cnVlLCA5XQ=="
+  },
+  {
+    "data_id": "200000000000000000099",
+    "data_name": "009_engine_report.pdf",
+    "data_type": "PDF",
+    "data_is_encrypted": false,
+    "data_content": "JVBERi0xLjQgTW9jayBCaW5hcnkgQ29udGVudCBVxApyn9W9TFkCFKC4eBWoEO9+/3MmnkdagCKRLW42OyGied+pvGqMud5TcQNTQYx9PPMqB3jvyZxA5Wv8cv4hogai+yNAEhHEHyU2C+uTLtGXtwlSpB5WGy147jk5uFM7P+el"
+  }
+]

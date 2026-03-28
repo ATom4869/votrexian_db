@@ -4,66 +4,76 @@ import base64
 import sys
 from tqdm import tqdm
 
-BUFFER_SIZE = 1 * 1024 * 1024 
-LIMIT_512MB = 512 * 1024 * 1024
+BUFFER_SIZE = 1 * 1024 * 1024 # 1MB Buffer buat progress bar
 
 def process_single_file(filepath, data_id):
     if not os.path.exists(filepath):
-        print(f"❌ Skip: File {filepath} tidak ada.")
+        print(f"❌ Skip: File '{filepath}' tidak ada.")
         return None
 
     file_size = os.path.getsize(filepath)
-    if file_size > LIMIT_512MB:
-        print(f"⚠️ Skip: {filepath} kegedean ({file_size / (1024*1024):.2f} MB).")
-        return None
+    ext = os.path.splitext(filepath)[1].lower().replace(".", "")
+    data_type = ext.upper() if ext else "RAW"
 
     file_bytes = bytearray()
+    
+    # Progress Bar per File
     with open(filepath, 'rb') as f:
-        with tqdm(total=file_size, unit='B', unit_scale=True, desc=f"Reading {os.path.basename(filepath)}") as pbar:
+        with tqdm(total=file_size, unit='B', unit_scale=True, desc=f"📦 Packing {os.path.basename(filepath)}") as pbar:
             while True:
-                data = f.read(BUFFER_SIZE)
-                if not data: break
-                file_bytes.extend(data)
-                pbar.update(len(data))
+                chunk = f.read(BUFFER_SIZE)
+                if not chunk:
+                    break
+                file_bytes.extend(chunk)
+                pbar.update(len(chunk))
 
+    # Konversi ke Base64
     encoded_string = base64.b64encode(file_bytes).decode('utf-8')
     
     return {
         "data_id": str(data_id),
         "data_name": os.path.basename(filepath),
+        "data_type": data_type,
         "data_is_encrypted": False,
         "data_content": encoded_string
     }
 
 def main():
-    # Contoh penggunaan: python3 script.py output.json 1001 file1.zip file2.jpg file3.pdf
+    # Perintah: python script.py output.json 7001 file1 file2...
     if len(sys.argv) < 4:
-        print("Usage: python3 script.py <output_json> <start_id> <file1> <file2> <file3> ...")
+        print("💡 Usage: python3 file_to_blob_json.py <output_json> <start_id> <file1> <file2> ...")
         return
 
     output_path = sys.argv[1]
-    start_id = int(sys.argv[2])
+    try:
+        start_id = int(sys.argv[2])
+    except ValueError:
+        print("❌ Error: Start ID harus angka!")
+        return
+        
     files_to_process = sys.argv[3:]
-
     payload_list = []
     
-    print(f"🚀 Memulai konversi {len(files_to_process)} file ke satu JSON...")
+    print(f"🚀 Votrexian Blobber: Mengonversi {len(files_to_process)} file...")
 
     for i, filepath in enumerate(files_to_process):
         current_id = start_id + i
-        data_entry = process_single_file(filepath, current_id)
-        if data_entry:
-            payload_list.append(data_entry)
+        # Bersihkan path dari tanda petik terminal
+        clean_path = filepath.strip("'").strip('"')
+        
+        entry = process_single_file(clean_path, current_id)
+        if entry:
+            payload_list.append(entry)
 
-    if not payload_list:
-        print("❌ Tidak ada data yang berhasil dikonversi.")
-        return
-
-    print(f"💾 Menulis {len(payload_list)} data ke {output_path}...")
-    with open(output_path, 'w', encoding='utf-8') as f:
-        json.dump(payload_list, f)
-
-    print(f"✅ Selesai! Total size JSON: {os.path.getsize(output_path) / (1024*1024):.2f} MB")
+    if payload_list:
+        print(f"💾 Menulis hasil ke {output_path}...")
+        with open(output_path, 'w', encoding='utf-8') as f:
+            json.dump(payload_list, f)
+        
+        final_size = os.path.getsize(output_path) / (1024*1024)
+        print(f"✅ Selesai! JSON Blob siap: {final_size:.2f} MB")
+    else:
+        print("❌ Gagal: Tidak ada data yang berhasil dikonversi.")
 
 if __name__ == "__main__":
     main()
