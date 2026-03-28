@@ -47,7 +47,7 @@ fn main() {
         println!(" [5] Search by Type");
         println!(" [6] Delete Data (ID)");
         println!(" [7] Save Snapshot");
-        println!(" [8] Load Another Snapshot");
+        println!(" [8] Load Snapshot");
         println!(" [9] Exit & Auto-Save");
         print!("--------------------------------------------------\n> ");
         io::stdout().flush().unwrap();
