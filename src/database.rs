@@ -10,8 +10,8 @@ const MAX_CONTENT_SIZE: usize = 512 * 1024 * 1024;
 
 pub struct DBMonitoring {
     pub storage: HashMap<BigUint, DataMetadata>,
-    pub current_usage: u64, // Dalam Bytes
-    pub max_capacity: u64,  // Dalam Bytes
+    pub current_usage: u64,
+    pub max_capacity: u64,
 }
 
 impl DBMonitoring {
